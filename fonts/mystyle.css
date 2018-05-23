@@ -1,0 +1,28 @@
+#app-navbar-collapse  {
+    background:red;
+}
+.navbar-container {
+     background: red;
+}
+
+/*панель навигации*/
+
+
+#usr {
+    width:36px;
+    height:36px;
+    
+}
+
+.im1 {
+    position: relative;
+    top: 12px;
+    
+}
+.im2 {
+    width: 100px;
+    position: relative;
+    top: 12px;
+    
+}
+

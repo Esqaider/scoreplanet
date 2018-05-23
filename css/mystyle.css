@@ -1,0 +1,222 @@
+﻿#app-navbar-collapse  {
+    background: #383c45;
+}
+.navbar-container {
+     background: orange;
+}
+
+/*панель навигации*/
+.nav {
+    
+}
+
+#usr {
+    width:36px;
+    height:36px; 
+}
+.im1 {
+    position: relative;
+    top: 12px;
+ 
+}
+input {
+  width:36px;
+  height:36px;
+  
+}
+
+.input[orch] {
+  width:36px;
+  height:36px;
+  
+}
+.submit {
+  cursor: pointer;
+  border: 5px solid #cecece;
+  background: #f6f6f6;
+  box-shadow: inset 0px 20px 20px #ffffff;
+  border-radius: 8px;
+  padding: 8px 14px;
+  width: 120px;
+
+}
+.submit:hover {
+  box-shadow: inset 0px -20px 20px #ffffff;
+}
+.submit:active {
+  margin-top: 1px;
+  margin-bottom: -1px;
+  zoom: 1;
+}
+
+nav a:hover {
+    color:#fff;
+}
+/*---Кнопка сохранить*/
+a.buton-save{
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+color: #ec971f;
+display:block;
+width:100px;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+padding: 8px 16px;
+margin: 20px auto;
+text-decoration: none;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+-webkit-transition: background-color 0.1s linear;
+-moz-transition: background-color 0.1s linear;
+-o-transition: background-color 0.1s linear;
+transition: background-color 0.1s linear;        
+}
+a.buton-save{
+background-color: #383c45;
+border: 1px solid #ec971f;
+}
+        
+a.buton-save:hover {
+background-color: #ec971f;
+text-decoration: none;
+}
+/*END --Кнопка сохранить*/
+
+.data-s {
+    font-size:22px;
+    color: #6a6c6f;
+    font-family:sans-serif;
+    width:75px;
+    text-align: center;
+    margin-left: auto;
+}
+.time {
+    font-size:13px;
+    color: #DC143C;
+    font-family:sans-serif;
+    text-align: center;
+}
+.liga_m{
+    width: 20px;
+    color: #242424;
+    font-size:15px;
+    text-align: center;
+    vertical-align:text-bottom;
+}
+.teams {
+    font-size:18px;
+    color: #242424;
+    font-family:sans-serif;
+    width:20px;
+   
+    text-align: center
+}
+
+#vs {
+    font-size:16px;
+    color:#DC143C;
+    font-family:sans-serif;
+    width:10px
+}
+.im2 {
+    color: #333;
+    text-align: center;
+    width:100px;
+    position: relative;
+    top: 12px;
+  
+}
+.add {
+    color: #333;
+    text-align: center;
+    width:70px;
+    height: 50px;
+    position: relative;
+    top: 15px;
+  
+}
+#form-controls {
+    border-radius: 3px;
+    height: 32px;
+    box-shadow: none;
+    border-color: #ddd;
+}
+#form-controls {
+    display: block;
+    width: 90%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+#im3 {
+    color: darkred;
+   
+}
+
+#scrollContent{
+    height:186px;
+	overflow:auto;
+	position:relative;
+}body {
+  padding-top: 50px;
+}
+ 
+.thumbnail {
+    position:relative;
+    overflow:hidden;
+}
+ 
+.caption {
+    position:absolute;
+    top:0;
+    right:0;
+    background:rgba(66, 139, 202, 0.75);
+    width:100%;
+    height:100%;
+    padding:2%;
+    display: none;
+    text-align:center;
+    color:#fff !important;
+    z-index:2;
+}
+.team-name {
+    font-size:12px;
+    color: #1a9999;
+    font-family:sans-serif;
+    width:40px;
+    text-align: center;
+    margin-left: 0px auto;
+}
+/*Links*/
+
+a {
+  color: red;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: red;
+    text-decoration: 
+  }
+
+  &:focus {
+    @include tab-focus;
+  }
+}
+/* Таблица рейтинг*/
+#table_range {
+    font-size: 16px
+}
