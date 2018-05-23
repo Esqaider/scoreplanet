@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+</head>
+<body>
+<style>
+    
+    #prog1,#prog2,#res1,#res2 {
+        width:36px;
+        height:36px;
+        text-align: center
+        }
+    
+    </style>
+    
+    
+<div>
+<table>
+    <tr>
+        <td> <b>Прогноз  </b> Питтсбург</td>
+        <td>
+            <div>
+                <input type="text" id="prog1" value="" placeholder="голы команды 1">
+
+            </div>
+        </td>
+
+        <td>
+            <div>
+                <input type="text" id="prog2" value="" placeholder="голы команды 2">
+
+            </div>
+        </td>
+        <td>Нэшвилл</td>
+    </tr>
+
+    <tr>
+
+        <td> <b>Результат  </b> Питтсбург</td>
+        <td>
+            <div>
+                <input type="text" id="res1" value="" placeholder="голы команды 1">
+
+            </div>
+        </td>
+
+        <td>
+            <div>
+                <input type="text" id="res2" value="" placeholder="голы команды 2">
+
+            </div>
+        </td>
+        <td>Нэшвилл</td>
+    </tr>
+
+    <tr>
+        <td>
+            <div>
+
+                <a href="#" onclick='ballResult()' class="submit">Рассчитать</a>
+            </div>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="form-group">
+
+                Очки <output id="result"></output>
+            </div>
+
+        </td>
+    </tr>
+
+
+
+
+</table>
+
+					</div>
+					<script src="js/main.js"></script>
+					</body>
+</html>

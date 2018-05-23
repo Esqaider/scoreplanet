@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="description" content="Admin, Dashboard, Bootstrap" />
+	<link rel="shortcut icon" sizes="196x196" href="../assets/images/logo.png">
+	<title>Science Score - Главная страница</title>
+	
+	<link rel="stylesheet" href="../assets/css/mystyle-matchi.css">
+	<link rel="stylesheet" href="../libs/bower/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../libs/bower/material-design-iconic-font/dist/css/material-design-iconic-font.css">
+	<!-- build:css ../assets/css/app.min.css -->
+	<link rel="stylesheet" href="../libs/bower/animate.css/animate.min.css">
+	<link rel="stylesheet" href="../libs/bower/fullcalendar/dist/fullcalendar.min.css">
+	<link rel="stylesheet" href="../libs/bower/perfect-scrollbar/css/perfect-scrollbar.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap.css">
+	<link rel="stylesheet" href="../assets/css/core.css">
+	<link rel="stylesheet" href="../assets/css/app.css">
+	<link rel="stylesheet" href="../assets/css/mystyle.css">
+	<!-- endbuild -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900,300">
+	<script src="../libs/bower/breakpoints.js/dist/breakpoints.min.js"></script>
+	<script>
+		Breakpoints();
+	</script>
+</head>
+	
+<body class="menubar-left menubar-unfold menubar-light theme-primary">
+<!--============= start main area -->
+
+<!-- APP NAVBAR ==========-->
+<nav id="app-navbar" class="navbar navbar-inverse navbar-fixed-top primary">
+  
+  <!-- navbar header -->
+  <div class="navbar-header">
+    <button type="button" id="menubar-toggle-btn" class="navbar-toggle visible-xs-inline-block navbar-toggle-left hamburger hamburger--collapse js-hamburger">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+    </button>
+
+    <button type="button" class="navbar-toggle navbar-toggle-right collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="zmdi zmdi-hc-lg zmdi-more"></span>
+    </button>
+
+    <button type="button" class="navbar-toggle navbar-toggle-right collapsed" data-toggle="collapse" data-target="#navbar-search" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="zmdi zmdi-hc-lg zmdi-search"></span>
+    </button>
+
+    <a href="../index.html" class="navbar-brand">
+      <span class="brand-icon"><i class="fa fa-gg"></i></span>
+      <span class="brand-name">Infinity</span>
+    </a>
+  </div><!-- .navbar-header -->
+  
+  <div class="navbar-container container-fluid">
+    <div class="collapse navbar-collapse" id="app-navbar-collapse">
+      <ul class="nav navbar-toolbar navbar-toolbar-left navbar-left">
+        <li class="hidden-float hidden-menubar-top">
+        <a href="javascript:void(0)" role="button" id="menubar-fold-btn" class="hamburger hamburger--arrowalt is-active js-hamburger">
+            <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+          </a>
+        </li>
+        <li>
+          <h5 class="page-title hidden-menubar-top hidden-float">Главная</h5>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-toolbar navbar-toolbar-right navbar-right">
+        <li class="nav-item dropdown hidden-float">
+          <a href="javascript:void(0)" data-toggle="collapse" data-target="#navbar-search" aria-expanded="false">
+            <i class="zmdi zmdi-hc-lg zmdi-search"></i>
+          </a>
+        </li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-hc-lg zmdi-notifications"></i></a>
+          <div class="media-group dropdown-menu animated flipInY">
+            <a href="javascript:void(0)" class="media-group-item">
+              <div class="media">
+                <div class="media-left">
+                  <div class="avatar avatar-xs avatar-circle">
+                    <img src="../assets/images/221.jpg" alt="">
+                    <i class="status status-online"></i>
+                  </div>
+                </div>
+                <div class="media-body">
+                  <h5 class="media-heading">John Doe</h5>
+                  <small class="media-meta">Active now</small>
+                </div>
+              </div>
+            </a><!-- .media-group-item -->
+
+            <a href="javascript:void(0)" class="media-group-item">
+              <div class="media">
+                <div class="media-left">
+                  <div class="avatar avatar-xs avatar-circle">
+                    <img src="../assets/images/205.jpg" alt="">
+                    <i class="status status-offline"></i>
+                  </div>
+                </div>
+                <div class="media-body">
+                  <h5 class="media-heading">John Doe</h5>
+                  <small class="media-meta">2 hours ago</small>
+                </div>
+              </div>
+            </a><!-- .media-group-item -->
+
+            <a href="javascript:void(0)" class="media-group-item">
+              <div class="media">
+                <div class="media-left">
+                  <div class="avatar avatar-xs avatar-circle">
+                    <img src="../assets/images/207.jpg" alt="">
+                    <i class="status status-away"></i>
+                  </div>
+                </div>
+                <div class="media-body">
+                  <h5 class="media-heading">Sara Smith</h5>
+                  <small class="media-meta">idle 5 min ago</small>
+                </div>
+              </div>
+            </a><!-- .media-group-item -->
+
+            <a href="javascript:void(0)" class="media-group-item">
+              <div class="media">
+                <div class="media-left">
+                  <div class="avatar avatar-xs avatar-circle">
+                    <img src="../assets/images/211.jpg" alt="">
+                    <i class="status status-away"></i>
+                  </div>
+                </div>
+                <div class="media-body">
+                  <h5 class="media-heading">Donia Dyab</h5>
+                  <small class="media-meta">idle 5 min ago</small>
+                </div>
+              </div>
+            </a><!-- .media-group-item -->
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-hc-lg zmdi-settings"></i></a>
+          <ul class="dropdown-menu animated flipInY">
+            <li><a href="javascript:void(0)"><i class="zmdi m-r-md zmdi-hc-lg zmdi-account-box"></i>My Profile</a></li>
+            <li><a href="javascript:void(0)"><i class="zmdi m-r-md zmdi-hc-lg zmdi-balance-wallet"></i>Balance</a></li>
+            <li><a href="javascript:void(0)"><i class="zmdi m-r-md zmdi-hc-lg zmdi-phone-msg"></i>Connection<span class="label label-primary">3</span></a></li>
+            <li><a href="javascript:void(0)"><i class="zmdi m-r-md zmdi-hc-lg zmdi-info"></i>privacy</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="side-panel-toggle" data-toggle="class" data-target="#side-panel" data-class="open" role="button"><i class="zmdi zmdi-hc-lg zmdi-apps"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div><!-- navbar-container -->
+</nav>
+<!--========== END app navbar -->
+
+<!-- APP ASIDE ==========-->
+<aside id="menubar" class="menubar light">
+  <div class="app-user">
+    <div class="media">
+      <div class="media-left">
+        <div class="avatar avatar-md avatar-circle">
+          <a href="javascript:void(0)"><img class="img-responsive" src="../assets/images/221.jpg" alt="avatar"/></a>
+        </div><!-- .avatar -->
+      </div>
+      <div class="media-body">
+        <div class="foldable">
+          <h5><a href="javascript:void(0)" class="username">John Doe</a></h5>
+          <ul>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropdown-toggle usertitle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <small>Web Developer</small>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu animated flipInY">
+                <li>
+                  <a class="text-color" href="/index.html">
+                    <span class="m-r-xs"><i class="fa fa-home"></i></span>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="text-color" href="profile.html">
+                    <span class="m-r-xs"><i class="fa fa-user"></i></span>
+                    <span>Profile</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="text-color" href="settings.html">
+                    <span class="m-r-xs"><i class="fa fa-gear"></i></span>
+                    <span>Settings</span>
+                  </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a class="text-color" href="logout.html">
+                    <span class="m-r-xs"><i class="fa fa-power-off"></i></span>
+                    <span>Home</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div><!-- .media-body -->
+    </div><!-- .media -->
+  </div><!-- .app-user -->
+
+  <div class="menubar-scroll">
+    <div class="menubar-scroll-inner">
+      <ul class="app-menu">
+        <li class="has-submenu">
+          <a href="index.html">
+            <i class="menu-icon zmdi zmdi-view-dashboard zmdi-hc-lg"></i>
+            <span class="menu-text">Моя лига</span>
+            <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right"></i>
+          </a>
+          
+        </li>
+        
+        <li class="has-submenu">
+          <a href="index.html">
+            <i class="menu-icon zmdi zmdi-layers zmdi-hc-lg"></i>
+            <span class="menu-text">Матч-центр</span>
+            <span class="label label-warning menu-label">2</span>
+            <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right"></i>
+          </a>
+        </li>
+
+        <li class="has-submenu">
+          <a href="javascript:void(0)" class="submenu-toggle">
+            <i class="menu-icon zmdi zmdi-pages zmdi-hc-lg"></i>
+            <span class="menu-text">Статистика</span>
+            <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right"></i>
+          </a>
+          <ul class="submenu">
+            <li><a href="profile.html"><span class="menu-text">Profile</span></a></li>
+            <li><a href="price.html"><span class="menu-text">Prices</span></a></li>
+            <li><a href="invoice.html"><span class="menu-text">Invoice</span></a></li>
+            <li><a href="gallery.1.html"><span class="menu-text">Gallery</span></a></li>
+            <li><a href="gallery.2.html"><span class="menu-text">Gallery 2</span></a></li>
+            <li><a href="support.html"><span class="menu-text">FAQ</span></a></li>
+            <li class="has-submenu">
+              <a href="javascript:void(0)" class="submenu-toggle">
+                <i class="menu-icon zmdi zmdi-plus zmdi-hc-lg"></i>
+                <span class="menu-text">Misc Pages</span>
+                <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right"></i>
+              </a>
+              <ul class="submenu">
+                <li><a href="login.html"><span class="menu-text">Login</span></a></li>
+                <li><a href="signup.html"><span class="menu-text">Sign Up</span></a></li>
+                <li><a href="password-forget.html"><span class="menu-text">Reset Password</span></a></li>
+                <li><a href="unlock.html"><span class="menu-text">Unlock Screen</span></a></li>
+                <li><a href="404.html"><span class="menu-text">404 Error</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="has-submenu">
+          <a href="javascript:void(0)" class="submenu-toggle">
+            <i class="menu-icon zmdi zmdi-check zmdi-hc-lg"></i>
+            <span class="menu-text">Участники</span>
+            <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right"></i>
+          </a>
+          <ul class="submenu">
+            <li><a href="form.layouts.html"><span class="menu-text">Form Layouts</span></a></li>
+            <li><a href="form.elements.html"><span class="menu-text">Form Elements</span></a></li>
+            <li><a href="form.custom.html"><span class="menu-text">Customized Elements</span></a></li>
+            <li><a href="form.plugins.html"><span class="menu-text">Form Plugins</span></a></li>
+            <li><a href="file-upload.html"><span class="menu-text">File Upload</span></a></li>
+            <li><a href="form.datetime.html"><span class="menu-text">DateTime Pickers</span></a></li>
+            <li><a href="editors.html"><span class="menu-text">Editors</span></a></li>
+          </ul>
+        </li>
+
+        <li class="has-submenu">
+          <a href="javascript:void(0)" class="submenu-toggle">
+            <i class="menu-icon zmdi zmdi-storage zmdi-hc-lg"></i>
+            <span class="menu-text">Зал Славы</span>
+            <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right"></i>
+          </a>
+          <ul class="submenu">
+            <li><a href="tables.basic.html"><span class="menu-text">Basic Tables</span></a></li>
+            <li><a href="datatables.html"><span class="menu-text">DataTables</span></a></li>
+          </ul>
+        </li>
+
+        <li class="has-submenu">
+          <a href="javascript:void(0)" class="submenu-toggle">
+            <i class="menu-icon zmdi zmdi-chart zmdi-hc-lg"></i>
+            <span class="menu-text">Регламент</span>
+            <span class="label label-success menu-label">7</span>
+            <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right"></i>
+          </a>
+          <ul class="submenu">
+            <li><a href="charts.flot.html"><span class="menu-text">Flot Charts</span></a></li>
+            <li><a href="echarts.bar.html"><span class="menu-text">Bar echarts</span></a></li>
+            <li><a href="echarts.pie.html"><span class="menu-text">Pie echarts</span></a></li>
+            <li><a href="echarts.line.html"><span class="menu-text">Line echarts</span></a></li>
+            <li><a href="echarts.map.html"><span class="menu-text">Map echarts</span></a></li>
+            <li><a href="echarts.scatter.html"><span class="menu-text">Scatter echarts</span></a></li>
+            <li><a href="echarts.custom.html"><span class="menu-text">Custom echarts</span></a></li>
+          </ul>
+        </li>
+
+
+        <li class="menu-separator"><hr></li>
+
+        <li>
+          <a href="documentation.html">
+            <i class="menu-icon zmdi zmdi-file-text zmdi-hc-lg"></i>
+            <span class="menu-text">Правила сайта</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="documentation.html">
+            <i class="menu-icon zmdi zmdi-file-text zmdi-hc-lg"></i>
+            <span class="menu-text">Контакты</span>
+          </a>
+        </li>
+
+      </ul><!-- .app-menu -->
+    </div><!-- .menubar-scroll-inner -->
+  </div><!-- .menubar-scroll -->
+</aside>
+<!--========== END app aside -->
+
+<!-- navbar search -->
+<div id="navbar-search" class="navbar-search collapse">
+  <div class="navbar-search-inner">
+    <form action="#">
+      <span class="search-icon"><i class="fa fa-search"></i></span>
+      <input class="search-field" type="search" placeholder="search..."/>
+    </form>
+    <button type="button" class="search-close" data-toggle="collapse" data-target="#navbar-search" aria-expanded="false">
+      <i class="fa fa-close"></i>
+    </button>
+  </div>
+  <div class="navbar-search-backdrop" data-toggle="collapse" data-target="#navbar-search" aria-expanded="false"></div>
+</div><!-- .navbar-search -->
+
+<!-- APP MAIN ==========-->
+
+
+<main id="app-main" class="app-main">
+ <div class="wrap"> 
+  <section class="app-content">
+	<!-- Календарь -->
+	<div class="row">
+        
+                <!-- DOM dataTable -->
+                
+		<div class="row">
+			<div class="col-md-12">
+				<div class="widget products-widget">
+				  <header class="widget-header">
+				    <h4 class="widget-title">Top items this month</h4>
+				  </header><!-- .widget-header -->
+				  <hr class="widget-separator">
+				  <div class="widget-body">
+						<div class="row">
+							<!-- Google Tag Manager (noscript) -->
+
+<noscript id="NOSCRIPT_8">
+	&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T78RMXL" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="DIV_9">
+	<div id="DIV_10">
+		<a href="#" id="A_11"></a>
+		<div id="DIV_12">
+			<div id="DIV_13">
+				<img alt="Buffalo Sabres" src="https://d3az93j4l3jwwl.cloudfront.net/team/s/649.png" id="IMG_14" />
+			</div> <span id="SPAN_15">BUF</span>
+		</div>
+		<div id="DIV_16">
+			@
+		</div>
+		<div id="DIV_17">
+			<div id="DIV_18">
+				<img alt="Toronto Maple Leafs" src="https://d3az93j4l3jwwl.cloudfront.net/team/s/676101.png" id="IMG_19" />
+			</div> <span id="SPAN_20">TOR</span>
+		</div><a href="#" id="A_21"></a>
+		<div id="DIV_22">
+			<div id="DIV_23">
+				<img alt="Winnipeg Jets" src="https://d3az93j4l3jwwl.cloudfront.net/team/s/675079.png" id="IMG_24" />
+			</div> <span id="SPAN_25">WPG</span>
+		</div>
+		<div id="DIV_26">
+			@
+		</div>
+		<div id="DIV_27">
+			<div id="DIV_28">
+				<img alt="Ottawa Senators" src="https://d3az93j4l3jwwl.cloudfront.net/team/s/663.png" id="IMG_29" />
+			</div> <span id="SPAN_30">OTT</span>
+		</div><a href="#" id="A_31"></a>
+		<div id="DIV_32">
+			<div id="DIV_33">
+				<img alt="Carolina Hurricanes" src="https://d3az93j4l3jwwl.cloudfront.net/team/s/763.png" id="IMG_34" />
+			</div> <span id="SPAN_35">CAR</span>
+		</div>
+		<div id="DIV_36">
+			@
+		</div>
+		<div id="DIV_37">
+			<div id="DIV_38">
+				<img alt="Florida Panthers" src="https://d3az93j4l3jwwl.cloudfront.net/team/s/671053.png" id="IMG_39" />
+			</div> <span id="SPAN_40">FLA</span>
+		</div>
+	</div>
+	<div id="DIV_41">
+		<div id="DIV_42">
+			<div id="DIV_43">
+				<div id="DIV_44">
+					<img alt="Buffalo Sabres" src="https://d3az93j4l3jwwl.cloudfront.net/team/s/649.png" id="IMG_45" />
+				</div> <span id="SPAN_46">Buffalo Sabres</span>
+			</div>
+			<div id="DIV_47">
+				<span id="SPAN_48">19:00 EDT</span><span id="SPAN_49">Monday, Apr 02</span><span id="SPAN_50">@</span>
+			</div>
+			<div id="DIV_51">
+				<div id="DIV_52">
+					<img alt="Toronto Maple Leafs" src="https://d3az93j4l3jwwl.cloudfront.net/team/s/676101.png" id="IMG_53" />
+				</div> <span id="SPAN_54">Toronto Maple Leafs</span>
+			</div>
+		</div>
+		<div id="DIV_55">
+			<select id="SELECT_56">
+				<option value="money-line-odds" id="OPTION_57">
+					Money Line
+				</option>
+				<option value="spread-odds" id="OPTION_58">
+					Spread
+				</option>
+				<option value="totals-odds" id="OPTION_59">
+					Totals
+				</option>
+			</select>
+		</div>
+		<div id="DIV_60">
+			<div id="DIV_61">
+				<div id="DIV_62">
+					<span id="SPAN_63"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_64">+240</a></span>
+				</div>
+				<div id="DIV_65">
+					<span id="SPAN_66"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_67"><span id="SPAN_68">Betway</span></a></span>
+				</div>
+				<div id="DIV_69">
+					<span id="SPAN_70"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_71">-300</a></span>
+				</div>
+			</div>
+			<div id="DIV_72">
+				<div id="DIV_73">
+					<span id="SPAN_74"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_75">-</a></span>
+				</div>
+				<div id="DIV_76">
+					<span id="SPAN_77"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_78"><span id="SPAN_79">Bodog</span></a></span>
+				</div>
+				<div id="DIV_80">
+					<span id="SPAN_81"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_82">-</a></span>
+				</div>
+			</div>
+			<div id="DIV_83">
+				<div id="DIV_84">
+					<span id="SPAN_85"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_86">+250</a></span>
+				</div>
+				<div id="DIV_87">
+					<span id="SPAN_88"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_89"><span id="SPAN_90">William Hill</span></a></span>
+				</div>
+				<div id="DIV_91">
+					<span id="SPAN_92"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_93">-303</a></span>
+				</div>
+			</div>
+			<div id="DIV_94">
+				<div id="DIV_95">
+					<span id="SPAN_96"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_97">+1.5 (-115)</a></span>
+				</div>
+				<div id="DIV_98">
+					<span id="SPAN_99"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_100"><span id="SPAN_101">Betway</span></a></span>
+				</div>
+				<div id="DIV_102">
+					<span id="SPAN_103"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_104">-1.5 (-105)</a></span>
+				</div>
+			</div>
+			<div id="DIV_105">
+				<div id="DIV_106">
+					<span id="SPAN_107"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_108">-</a></span>
+				</div>
+				<div id="DIV_109">
+					<span id="SPAN_110"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_111"><span id="SPAN_112">Bodog</span></a></span>
+				</div>
+				<div id="DIV_113">
+					<span id="SPAN_114"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_115">-</a></span>
+				</div>
+			</div>
+			<div id="DIV_116">
+				<div id="DIV_117">
+					<span id="SPAN_118"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_119">-</a></span>
+				</div>
+				<div id="DIV_120">
+					<span id="SPAN_121"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_122"><span id="SPAN_123">William Hill</span></a></span>
+				</div>
+				<div id="DIV_124">
+					<span id="SPAN_125"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_126">-</a></span>
+				</div>
+			</div>
+			<div id="DIV_127">
+				<div id="DIV_128">
+				</div>
+				<div id="DIV_129">
+					<span id="SPAN_130">Over</span>
+				</div>
+				<div id="DIV_131">
+					<span id="SPAN_132">Under</span>
+				</div>
+			</div>
+			<div id="DIV_133">
+				<div id="DIV_134">
+					<span id="SPAN_135"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_136"><span id="SPAN_137">Betway</span></a></span>
+				</div>
+				<div id="DIV_138">
+					<span id="SPAN_139"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_140">6.0 (-105)</a></span>
+				</div>
+				<div id="DIV_141">
+					<span id="SPAN_142"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_143">6.0 (-115)</a></span>
+				</div>
+			</div>
+			<div id="DIV_144">
+				<div id="DIV_145">
+					<span id="SPAN_146"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_147"><span id="SPAN_148">Bodog</span></a></span>
+				</div>
+				<div id="DIV_149">
+					<span id="SPAN_150"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_151">-</a></span>
+				</div>
+				<div id="DIV_152">
+					<span id="SPAN_153"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_154">-</a></span>
+				</div>
+			</div>
+			<div id="DIV_155">
+				<div id="DIV_156">
+					<span id="SPAN_157"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_158"><span id="SPAN_159">William Hill</span></a></span>
+				</div>
+				<div id="DIV_160">
+					<span id="SPAN_161"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_162">5.5 (-143)</a></span>
+				</div>
+				<div id="DIV_163">
+					<span id="SPAN_164"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_165">5.5 (+105)</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="DIV_166">
+		<div id="DIV_167">
+			<div id="DIV_168">
+				<div id="DIV_169">
+					<img alt="Winnipeg Jets" src="https://d3az93j4l3jwwl.cloudfront.net/team/s/675079.png" id="IMG_170" />
+				</div> <span id="SPAN_171">Winnipeg Jets</span>
+			</div>
+			<div id="DIV_172">
+				<span id="SPAN_173">19:30 EDT</span><span id="SPAN_174">Monday, Apr 02</span><span id="SPAN_175">@</span>
+			</div>
+			<div id="DIV_176">
+				<div id="DIV_177">
+					<img alt="Ottawa Senators" src="https://d3az93j4l3jwwl.cloudfront.net/team/s/663.png" id="IMG_178" />
+				</div> <span id="SPAN_179">Ottawa Senators</span>
+			</div>
+		</div>
+		<div id="DIV_180">
+			<select id="SELECT_181">
+				<option value="money-line-odds" id="OPTION_182">
+					Money Line
+				</option>
+				<option value="spread-odds" id="OPTION_183">
+					Spread
+				</option>
+				<option value="totals-odds" id="OPTION_184">
+					Totals
+				</option>
+			</select>
+		</div>
+		<div id="DIV_185">
+			<div id="DIV_186">
+				<div id="DIV_187">
+					<span id="SPAN_188"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_189">-185</a></span>
+				</div>
+				<div id="DIV_190">
+					<span id="SPAN_191"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_192"><span id="SPAN_193">Betway</span></a></span>
+				</div>
+				<div id="DIV_194">
+					<span id="SPAN_195"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_196">+155</a></span>
+				</div>
+			</div>
+			<div id="DIV_197">
+				<div id="DIV_198">
+					<span id="SPAN_199"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_200">-</a></span>
+				</div>
+				<div id="DIV_201">
+					<span id="SPAN_202"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_203"><span id="SPAN_204">Bodog</span></a></span>
+				</div>
+				<div id="DIV_205">
+					<span id="SPAN_206"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_207">-</a></span>
+				</div>
+			</div>
+			<div id="DIV_208">
+				<div id="DIV_209">
+					<span id="SPAN_210"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_211">-179</a></span>
+				</div>
+				<div id="DIV_212">
+					<span id="SPAN_213"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_214"><span id="SPAN_215">William Hill</span></a></span>
+				</div>
+				<div id="DIV_216">
+					<span id="SPAN_217"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_218">+160</a></span>
+				</div>
+			</div>
+			<div id="DIV_219">
+				<div id="DIV_220">
+					<span id="SPAN_221"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_222">-1.5 (+155)</a></span>
+				</div>
+				<div id="DIV_223">
+					<span id="SPAN_224"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_225"><span id="SPAN_226">Betway</span></a></span>
+				</div>
+				<div id="DIV_227">
+					<span id="SPAN_228"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_229">+1.5 (-185)</a></span>
+				</div>
+			</div>
+			<div id="DIV_230">
+				<div id="DIV_231">
+					<span id="SPAN_232"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_233">-</a></span>
+				</div>
+				<div id="DIV_234">
+					<span id="SPAN_235"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_236"><span id="SPAN_237">Bodog</span></a></span>
+				</div>
+				<div id="DIV_238">
+					<span id="SPAN_239"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_240">-</a></span>
+				</div>
+			</div>
+			<div id="DIV_241">
+				<div id="DIV_242">
+					<span id="SPAN_243"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_244">-</a></span>
+				</div>
+				<div id="DIV_245">
+					<span id="SPAN_246"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_247"><span id="SPAN_248">William Hill</span></a></span>
+				</div>
+				<div id="DIV_249">
+					<span id="SPAN_250"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_251">-</a></span>
+				</div>
+			</div>
+			<div id="DIV_252">
+				<div id="DIV_253">
+				</div>
+				<div id="DIV_254">
+					<span id="SPAN_255">Over</span>
+				</div>
+				<div id="DIV_256">
+					<span id="SPAN_257">Under</span>
+				</div>
+			</div>
+			<div id="DIV_258">
+				<div id="DIV_259">
+					<span id="SPAN_260"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_261"><span id="SPAN_262">Betway</span></a></span>
+				</div>
+				<div id="DIV_263">
+					<span id="SPAN_264"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_265">6.0 (-115)</a></span>
+				</div>
+				<div id="DIV_266">
+					<span id="SPAN_267"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_268">6.0 (-105)</a></span>
+				</div>
+			</div>
+			<div id="DIV_269">
+				<div id="DIV_270">
+					<span id="SPAN_271"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_272"><span id="SPAN_273">Bodog</span></a></span>
+				</div>
+				<div id="DIV_274">
+					<span id="SPAN_275"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_276">-</a></span>
+				</div>
+				<div id="DIV_277">
+					<span id="SPAN_278"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_279">-</a></span>
+				</div>
+			</div>
+			<div id="DIV_280">
+				<div id="DIV_281">
+					<span id="SPAN_282"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_283"><span id="SPAN_284">William Hill</span></a></span>
+				</div>
+				<div id="DIV_285">
+					<span id="SPAN_286"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_287">6.5 (+100)</a></span>
+				</div>
+				<div id="DIV_288">
+					<span id="SPAN_289"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_290">6.5 (-137)</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="DIV_291">
+		<div id="DIV_292">
+			<div id="DIV_293">
+				<div id="DIV_294">
+					<img alt="Carolina Hurricanes" src="https://d3az93j4l3jwwl.cloudfront.net/team/s/763.png" id="IMG_295" />
+				</div> <span id="SPAN_296">Carolina Hurricanes</span>
+			</div>
+			<div id="DIV_297">
+				<span id="SPAN_298">19:30 EDT</span><span id="SPAN_299">Monday, Apr 02</span><span id="SPAN_300">@</span>
+			</div>
+			<div id="DIV_301">
+				<div id="DIV_302">
+					<img alt="Florida Panthers" src="https://d3az93j4l3jwwl.cloudfront.net/team/s/671053.png" id="IMG_303" />
+				</div> <span id="SPAN_304">Florida Panthers</span>
+			</div>
+		</div>
+		<div id="DIV_305">
+			<select id="SELECT_306">
+				<option value="money-line-odds" id="OPTION_307">
+					Money Line
+				</option>
+				<option value="spread-odds" id="OPTION_308">
+					Spread
+				</option>
+				<option value="totals-odds" id="OPTION_309">
+					Totals
+				</option>
+			</select>
+		</div>
+		<div id="DIV_310">
+			<div id="DIV_311">
+				<div id="DIV_312">
+					<span id="SPAN_313"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_314">+150</a></span>
+				</div>
+				<div id="DIV_315">
+					<span id="SPAN_316"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_317"><span id="SPAN_318">Betway</span></a></span>
+				</div>
+				<div id="DIV_319">
+					<span id="SPAN_320"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_321">-180</a></span>
+				</div>
+			</div>
+			<div id="DIV_322">
+				<div id="DIV_323">
+					<span id="SPAN_324"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_325">-</a></span>
+				</div>
+				<div id="DIV_326">
+					<span id="SPAN_327"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_328"><span id="SPAN_329">Bodog</span></a></span>
+				</div>
+				<div id="DIV_330">
+					<span id="SPAN_331"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_332">-</a></span>
+				</div>
+			</div>
+			<div id="DIV_333">
+				<div id="DIV_334">
+					<span id="SPAN_335"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_336">+155</a></span>
+				</div>
+				<div id="DIV_337">
+					<span id="SPAN_338"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_339"><span id="SPAN_340">William Hill</span></a></span>
+				</div>
+				<div id="DIV_341">
+					<span id="SPAN_342"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_343">-175</a></span>
+				</div>
+			</div>
+			<div id="DIV_344">
+				<div id="DIV_345">
+					<span id="SPAN_346"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_347">+1.5 (-195)</a></span>
+				</div>
+				<div id="DIV_348">
+					<span id="SPAN_349"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_350"><span id="SPAN_351">Betway</span></a></span>
+				</div>
+				<div id="DIV_352">
+					<span id="SPAN_353"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_354">-1.5 (+165)</a></span>
+				</div>
+			</div>
+			<div id="DIV_355">
+				<div id="DIV_356">
+					<span id="SPAN_357"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_358">-</a></span>
+				</div>
+				<div id="DIV_359">
+					<span id="SPAN_360"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_361"><span id="SPAN_362">Bodog</span></a></span>
+				</div>
+				<div id="DIV_363">
+					<span id="SPAN_364"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_365">-</a></span>
+				</div>
+			</div>
+			<div id="DIV_366">
+				<div id="DIV_367">
+					<span id="SPAN_368"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_369">-</a></span>
+				</div>
+				<div id="DIV_370">
+					<span id="SPAN_371"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_372"><span id="SPAN_373">William Hill</span></a></span>
+				</div>
+				<div id="DIV_374">
+					<span id="SPAN_375"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_376">-</a></span>
+				</div>
+			</div>
+			<div id="DIV_377">
+				<div id="DIV_378">
+				</div>
+				<div id="DIV_379">
+					<span id="SPAN_380">Over</span>
+				</div>
+				<div id="DIV_381">
+					<span id="SPAN_382">Under</span>
+				</div>
+			</div>
+			<div id="DIV_383">
+				<div id="DIV_384">
+					<span id="SPAN_385"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_386"><span id="SPAN_387">Betway</span></a></span>
+				</div>
+				<div id="DIV_388">
+					<span id="SPAN_389"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_390">6.0 (-105)</a></span>
+				</div>
+				<div id="DIV_391">
+					<span id="SPAN_392"><a href="https://www.canadasportsbetting.ca/betcanadian/betway-ca.html?clicTarget=dailyfaceoff" id="A_393">6.0 (-115)</a></span>
+				</div>
+			</div>
+			<div id="DIV_394">
+				<div id="DIV_395">
+					<span id="SPAN_396"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_397"><span id="SPAN_398">Bodog</span></a></span>
+				</div>
+				<div id="DIV_399">
+					<span id="SPAN_400"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_401">-</a></span>
+				</div>
+				<div id="DIV_402">
+					<span id="SPAN_403"><a href="https://www.canadasportsbetting.ca/betcanadian/bodog-ca.html?clicTarget=dailyfaceoff" id="A_404">-</a></span>
+				</div>
+			</div>
+			<div id="DIV_405">
+				<div id="DIV_406">
+					<span id="SPAN_407"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_408"><span id="SPAN_409">William Hill</span></a></span>
+				</div>
+				<div id="DIV_410">
+					<span id="SPAN_411"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_412">5.5 (-137)</a></span>
+				</div>
+				<div id="DIV_413">
+					<span id="SPAN_414"><a href="https://www.canadasportsbetting.ca/betcanadian/williamhill-ca.html?clicTarget=dailyfaceoff" id="A_415">5.5 (+100)</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" id="SCRIPT_416">(function(){
+            document.addEventListener('DOMContentLoaded', function(){
+                var data = {
+                    'event': 'pageLoad',
+                    'partnerName': document.body.getAttribute('data-partner-name'),
+                    'website': (window.location !== window.parent.location) ? document.referrer : document.location.href,
+                    'widgetName': document.body.getAttribute('data-widget-name'),
+                    'partnershipType': document.body.getAttribute('data-partnership-type')
+                };
+
+                window.dataLayer.push(data);
+            });
+
+            var oddsSelectorEvents = document.getElementsByClassName('match-odds-selector-select');
+            Array.prototype.forEach.call(oddsSelectorEvents, function (item, i) {
+                item.addEventListener('change', function(e) {
+                    var data = {
+                        'event': 'oddsSelected',
+                        'oddsType': item.value
+                    };
+
+                    window.dataLayer.push(data);
+                });
+            });
+
+            var matchTabs = document.getElementsByClassName('selector-matches-element');
+            Array.prototype.forEach.call(matchTabs, function (item, i) {
+                item.addEventListener('click', function(e){
+                    var data = {
+                        'event': 'tabClick',
+                        'tabNumber': item.getAttribute('data-tab-number')
+                    };
+
+                    window.dataLayer.push(data);
+                });
+            });
+
+            var oddsLinks = document.querySelectorAll('[data-link-bookmaker]');
+            Array.prototype.forEach.call(oddsLinks, function (item, i) {
+                item.addEventListener('click', function(e){
+                    var data = {
+                        'event': 'affiliateClick',
+                        'listingType': 'table',
+                        'linkClick': item.getAttribute('data-link-bookmaker'),
+                        'linkType': item.getAttribute('data-link-type'),
+                        'linkPosition': item.getAttribute('data-link-position'),
+                        'oddsType': item.getAttribute('data-odds-type'),
+                        'tabNumber': item.getAttribute('data-tab-number')
+                    };
+
+                    window.dataLayer.push(data);
+                });
+            });
+
+            function inIframe () {
+                try {
+                    return window.self !== window.top;
+                } catch (e) {
+                    return true;
+                }
+            }
+
+            if(inIframe()){
+                window.addEventListener('message', function (event) {
+                    var allowedOrigins = [
+                        'https://www.dailyfaceoff.com/',
+                        'https://canucksarmy.com/',
+                        'https://flamesnation.ca/',
+                        'https://oilersnation.com/',
+                        'https://jetsnation.ca/',
+                        'https://www.flyersnation.net/',
+                        'https://mapleleafsnation.com/',
+                        'https://wingsnation.com/',
+                        'https://bluejaysnation.com/',
+                        'http://www.hockeyfights.com/',
+                        'https://www.dailyfaceoff.com/',
+                        'https://www.nhlnumbers.com/',
+                        'https://www.canadasportsbetting.ca/',
+                        'https://www.raptorsrepublic.com/',
+                        'https://forums.raptorsrepublic.com/'
+                    ];
+
+                    if (allowedOrigins.indexOf(~event.origin)) {
+                        window.parent.postMessage('pong', '*');
+                        console.log('origin is known');
+                    } else {
+                        console.log('origin is unknown');
+                        return;
+                    }
+                });
+            }
+
+            document.addEventListener('DOMContentLoaded', sendResizeMessage);
+            window.addEventListener('load', sendResizeMessage);
+
+            function sendResizeMessage() {
+                window.parent.postMessage({
+                    'command': 'resizeFrameHeight',
+                    'height': document.querySelectorAll('.embedded-sport-block')[0].offsetHeight
+                }, '*');
+            }
+            
+            function hasClass(el, className) {
+                if (el.classList) {
+                    return el.classList.contains(className);
+                }
+
+                return new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);
+            }
+
+            function addClass(el, className) {
+                if (el.classList)
+                    el.classList.add(className);
+                else
+                    el.className += ' ' + className;
+            }
+
+            function removeClass(el, className) {
+                if (el.classList)
+                    el.classList.remove(className);
+                else
+                    el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+            }
+
+            function removeClassFromAll(selector, className) {
+                var items = document.querySelectorAll(selector);
+                Array.prototype.forEach.call(items, function (item, i) {
+                    removeClass(item, className);
+                });
+            }
+
+            function showHideSelector(selectors, className) {
+                var divsToHide = document.querySelectorAll(selectors);
+                for (var i = 0; i < divsToHide.length; i++) {
+                    var element = divsToHide[i];
+                    if (hasClass(element, className) === true) {
+                        element.style.visibility = '';
+                        element.style.display = '';
+                    } else {
+                        element.style.visibility = 'hidden';
+                        element.style.display = 'none';
+                    }
+                }
+            }
+
+            function changeAllSelectors(value) {
+                var oddsSelector = document.querySelectorAll('.match-odds-selector-select');
+                Array.prototype.forEach.call(oddsSelector, function (item, i) {
+                    item.value = value
+                });
+            }
+
+            // Assign the change action to the select
+            var oddsSelector = document.querySelectorAll('.match-odds-selector-select');
+            Array.prototype.forEach.call(oddsSelector, function (item, i) {
+                if (typeof item.value !== 'undefined') {
+                    item.addEventListener('change', function (e) {
+                        showHideSelector('.match-odds-list-item', item.value);
+                        changeAllSelectors(item.value);
+                        sendResizeMessage();
+                    });
+                }
+            });
+
+            // Assign the change action to the select
+            var tabs = document.querySelectorAll('.selector-matches-element');
+            Array.prototype.forEach.call(tabs, function (item, i) {
+                item.addEventListener('click', function (e) {
+                    var tabNumber = item.getAttribute('data-tab-number');
+                    removeClassFromAll('.selector-matches-element', 'selector-matches-element--active');
+                    addClass(item, 'selector-matches-element--active');
+                    showHideSelector('.match-block', 'tab-number-' + tabNumber);
+                    sendResizeMessage();
+                });
+            });
+
+            showHideSelector('.match-odds-list-item', 'money-line-odds');
+            showHideSelector('.match-block', 'tab-number-0');
+        })();
+	</script>
+</div>
+							
+							
+						</div><!-- .row -->
+					</div><!-- .widget-body -->
+				</div><!-- .widget -->
+			</div><!-- END column -->
+		</div><!-- .row -->
+	</section><!-- .app-content -->
+</div><!-- .wrap -->
+  <!-- APP FOOTER -->
+  <div class="wrap p-t-0">
+    <footer class="app-footer">
+      <div class="clearfix">
+        <ul class="footer-menu pull-right">
+          <li><a href="javascript:void(0)">Careers</a></li>
+          <li><a href="javascript:void(0)">Privacy Policy</a></li>
+          <li><a href="javascript:void(0)">Feedback <i class="fa fa-angle-up m-l-md"></i></a></li>
+        </ul>
+        <div class="copyright pull-left">Copyright RaThemes 2016 &copy;</div>
+      </div>
+    </footer>
+  </div>
+  <!-- /#app-footer -->
+</main>
+<!--========== END app main -->
+
+	<!-- APP CUSTOMIZER -->
+	<div id="app-customizer" class="app-customizer">
+		<a href="javascript:void(0)" 
+			class="app-customizer-toggle theme-color" 
+			data-toggle="class" 
+			data-class="open"
+			data-active="false"
+			data-target="#app-customizer">
+			<i class="fa fa-gear"></i>
+		</a>
+		<div class="customizer-tabs">
+			<!-- tabs list -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#menubar-customizer" aria-controls="menubar-customizer" role="tab" data-toggle="tab">Menubar</a></li>
+				<li role="presentation"><a href="#navbar-customizer" aria-controls="navbar-customizer" role="tab" data-toggle="tab">Navbar</a></li>
+			</ul><!-- .nav-tabs -->
+
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane in active fade" id="menubar-customizer">
+					<div class="hidden-menubar-top hidden-float">
+						<div class="m-b-0">
+							<label for="menubar-fold-switch">Fold Menubar</label>
+							<div class="pull-right">
+								<input id="menubar-fold-switch" type="checkbox" data-switchery data-size="small" />
+							</div>
+						</div>
+						<hr class="m-h-md">
+					</div>
+					<div class="radio radio-default m-b-md">
+						<input type="radio" id="menubar-light-theme" name="menubar-theme" data-toggle="menubar-theme" data-theme="light">
+						<label for="menubar-light-theme">Light</label>
+					</div>
+
+					<div class="radio radio-inverse m-b-md">
+						<input type="radio" id="menubar-dark-theme" name="menubar-theme" data-toggle="menubar-theme" data-theme="dark">
+						<label for="menubar-dark-theme">Dark</label>
+					</div>
+				</div><!-- .tab-pane -->
+				<div role="tabpanel" class="tab-pane fade" id="navbar-customizer">
+					<!-- This Section is populated Automatically By javascript -->
+				</div><!-- .tab-pane -->
+			</div>
+		</div><!-- .customizer-taps -->
+		<hr class="m-0">
+		<div class="customizer-reset">
+			<button id="customizer-reset-btn" class="btn btn-block btn-outline btn-primary">Reset</button>
+			<a href="https://themeforest.net/item/infinity-responsive-web-app-kit/16230780?ref=BootstrapTema" class="m-t-sm btn btn-block btn-danger">Buy Now</a>
+		</div>
+	</div><!-- #app-customizer -->
+	
+	<!-- SIDE PANEL -->
+	<div id="side-panel" class="side-panel">
+		<div class="panel-header">
+			<h4 class="panel-title">Friends</h4>
+		</div>
+		<div class="scrollable-container">
+			<div class="media-group">
+				<a href="javascript:void(0)" class="media-group-item">
+					<div class="media">
+						<div class="media-left">
+							<div class="avatar avatar-xs avatar-circle">
+								<img src="../assets/images/221.jpg" alt="">
+								<i class="status status-online"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h5 class="media-heading">John Doe</h5>
+							<small class="media-meta">active now</small>
+						</div>
+					</div>
+				</a><!-- .media-group-item -->
+
+				<a href="javascript:void(0)" class="media-group-item">
+					<div class="media">
+						<div class="media-left">
+							<div class="avatar avatar-xs avatar-circle">
+								<img src="../assets/images/205.jpg" alt="">
+								<i class="status status-online"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h5 class="media-heading">John Doe</h5>
+							<small class="media-meta">active now</small>
+						</div>
+					</div>
+				</a><!-- .media-group-item -->
+
+				<a href="javascript:void(0)" class="media-group-item">
+					<div class="media">
+						<div class="media-left">
+							<div class="avatar avatar-xs avatar-circle">
+								<img src="../assets/images/206.jpg" alt="">
+								<i class="status status-online"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h5 class="media-heading">Adam Kiti</h5>
+							<small class="media-meta">active now</small>
+						</div>
+					</div>
+				</a><!-- .media-group-item -->
+
+				<a href="javascript:void(0)" class="media-group-item">
+					<div class="media">
+						<div class="media-left">
+							<div class="avatar avatar-xs avatar-circle">
+								<img src="../assets/images/207.jpg" alt="">
+								<i class="status status-away"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h5 class="media-heading">Jane Doe</h5>
+							<small class="media-meta">away</small>
+						</div>
+					</div>
+				</a><!-- .media-group-item -->
+
+				<a href="javascript:void(0)" class="media-group-item">
+					<div class="media">
+						<div class="media-left">
+							<div class="avatar avatar-xs avatar-circle">
+								<img src="../assets/images/208.jpg" alt="">
+								<i class="status status-away"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h5 class="media-heading">Sara Adams</h5>
+							<small class="media-meta">away</small>
+						</div>
+					</div>
+				</a><!-- .media-group-item -->
+
+				<a href="javascript:void(0)" class="media-group-item">
+					<div class="media">
+						<div class="media-left">
+							<div class="avatar avatar-xs avatar-circle">
+								<img src="../assets/images/209.jpg" alt="">
+								<i class="status status-away"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h5 class="media-heading">Smith Doe</h5>
+							<small class="media-meta">away</small>
+						</div>
+					</div>
+				</a><!-- .media-group-item -->
+
+				<a href="javascript:void(0)" class="media-group-item">
+					<div class="media">
+						<div class="media-left">
+							<div class="avatar avatar-xs avatar-circle">
+								<img src="../assets/images/219.jpg" alt="">
+								<i class="status status-away"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h5 class="media-heading">Dana Dyab</h5>
+							<small class="media-meta">away</small>
+						</div>
+					</div>
+				</a><!-- .media-group-item -->
+
+				<a href="javascript:void(0)" class="media-group-item">
+					<div class="media">
+						<div class="media-left">
+							<div class="avatar avatar-xs avatar-circle">
+								<img src="../assets/images/210.jpg" alt="">
+								<i class="status status-offline"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h5 class="media-heading">Jeffry Way</h5>
+							<small class="media-meta">2 hours ago</small>
+						</div>
+					</div>
+				</a><!-- .media-group-item -->
+
+				<a href="javascript:void(0)" class="media-group-item">
+					<div class="media">
+						<div class="media-left">
+							<div class="avatar avatar-xs avatar-circle">
+								<img src="../assets/images/211.jpg" alt="">
+								<i class="status status-offline"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h5 class="media-heading">Jane Doe</h5>
+							<small class="media-meta">5 hours ago</small>
+						</div>
+					</div>
+				</a><!-- .media-group-item -->
+
+				<a href="javascript:void(0)" class="media-group-item">
+					<div class="media">
+						<div class="media-left">
+							<div class="avatar avatar-xs avatar-circle">
+								<img src="../assets/images/212.jpg" alt="">
+								<i class="status status-offline"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h5 class="media-heading">Adam Khoury</h5>
+							<small class="media-meta">22 minutes ago</small>
+						</div>
+					</div>
+				</a><!-- .media-group-item -->
+
+				<a href="javascript:void(0)" class="media-group-item">
+					<div class="media">
+						<div class="media-left">
+							<div class="avatar avatar-xs avatar-circle">
+								<img src="../assets/images/207.jpg" alt="">
+								<i class="status status-offline"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h5 class="media-heading">Sara Smith</h5>
+							<small class="media-meta">2 days ago</small>
+						</div>
+					</div>
+				</a><!-- .media-group-item -->
+
+				<a href="javascript:void(0)" class="media-group-item">
+					<div class="media">
+						<div class="media-left">
+							<div class="avatar avatar-xs avatar-circle">
+								<img src="../assets/images/211.jpg" alt="">
+								<i class="status status-offline"></i>
+							</div>
+						</div>
+						<div class="media-body">
+							<h5 class="media-heading">Donia Dyab</h5>
+							<small class="media-meta">3 days ago</small>
+						</div>
+					</div>
+				</a><!-- .media-group-item -->
+			</div>
+		</div><!-- .scrollable-container -->
+	</div><!-- /#side-panel -->
+
+	<!-- build:js ../assets/js/core.min.js -->
+	<script src="../libs/bower/jquery/dist/jquery.js"></script>
+	<script src="../libs/bower/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../libs/bower/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+	<script src="../libs/bower/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+	<script src="../libs/bower/jquery-slimscroll/jquery.slimscroll.js"></script>
+	<script src="../libs/bower/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+	<script src="../libs/bower/PACE/pace.min.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:js ../assets/js/app.min.js -->
+	<script src="../assets/js/library.js"></script>
+	<script src="../assets/js/plugins.js"></script>
+	<script src="../assets/js/app.js"></script>
+	<!-- endbuild -->
+	<script src="../libs/bower/moment/moment.js"></script>
+	<script src="../libs/bower/fullcalendar/dist/fullcalendar.min.js"></script>
+	<script src="../assets/js/fullcalendar.js"></script>
+</body>
+</html>
