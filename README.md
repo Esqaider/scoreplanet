@@ -1,2 +1,2 @@
-# scoreplanet
-Разработка сайта прогнозов спортивных событий
+Documentation: 
+Read the "default/documentation.html" or "topbar/documentation.html"
