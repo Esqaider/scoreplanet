@@ -65,7 +65,7 @@ if (file_exists($page_template)){
 	// Вы: Страница не найдена, возвращаем код 404
 	http_response_code(404);
 	echo "<h1>Page not found.</h1>";
-	die()
+	die();
 };
 // Вы: конец файла
 ?>
